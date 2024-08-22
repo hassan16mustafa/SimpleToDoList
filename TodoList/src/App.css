@@ -1,0 +1,100 @@
+/* Center the Home component and its contents */
+.create-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  flex-direction: column;
+  text-align: center;
+  background-color: #1c1c1c; /* Black background for the entire app */
+  color: white; /* White text color for contrast */
+}
+
+/* Style the container holding the To-do List */
+.todo-list {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #333; /* Dark gray background */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.5); /* Red shadow */
+}
+
+/* Center the Create component and its contents */
+.create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack input and button vertically */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Style the input box */
+.create-container input {
+  padding: 10px;
+  margin-bottom: 10px; /* Space between input and button */
+  font-size: 16px;
+  border: 1px solid #555; /* Dark border */
+  border-radius: 4px;
+  width: 100%; /* Full width of parent */
+  max-width: 300px; /* Limit the width */
+  background-color: #222; /* Darker input background */
+  color: white; /* White text */
+}
+
+/* Style the Add button */
+.create-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red; /* Red background color */
+  color: white; /* White text color */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+  width: 100%; /* Full width of parent */
+  max-width: 300px; /* Limit the width */
+}
+
+/* Optional: Add hover effect for the button */
+.create-container button:hover {
+  background-color: darkred;
+}
+
+/* Style individual task items */
+.todo-item {
+  background-color: #444; /* Dark gray background */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(255, 0, 0, 0.5); /* Red shadow */
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white; /* White text */
+}
+
+/* Style for completed tasks */
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888; /* Gray color for completed tasks */
+}
+
+/* Style the Remove button */
+.todo-item button {
+  background-color: #ff4d4d; /* Bright red background */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* Style the checkbox */
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: red; /* Red checkbox color */
+}
